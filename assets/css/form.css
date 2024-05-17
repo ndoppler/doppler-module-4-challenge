@@ -1,0 +1,142 @@
+:root {
+    --fontColor: black;
+    --backgroundColor: white;
+    --accentColor: skyblue;
+  }
+
+. {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+    text-align: end;
+    position: relative;
+    background-color: var(--backgroundColor);
+}
+
+hr {
+    border: 0;
+    height: 4px;
+    margin: 10px 0px;
+    background-color: var(--fontColor)
+}
+
+body{
+    background-color: var(--backgroundColor)
+}
+
+.container {
+    width: 98%;
+    height: 700px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+.blogWelcome {
+    display: flex;
+    justify-content: center;
+    height: 650px;
+    width: 50%;
+    align-self: center;
+}
+
+.blogDisplay {
+    display: flex;
+    background: var(--accentColor);
+    height: 100px;
+    width: 100px;
+    justify-self: center;
+    text-align: center;
+    align-self: center;
+    
+}
+.blogText {
+    justify-self: center;
+    align-self: center;
+    margin-left: 4px;
+    color: var(--fontColor);
+}
+
+.form {
+    flex-direction: column;
+    height: 650px;
+    width: 50%;
+    justify-content: center;
+    align-content: center;
+}
+
+#lightDarkSwitcher {
+    font-size: 32px;
+    margin: 50px 20px 50px 0px;
+    background: none;
+    border: none;
+}
+
+#sectionTitle {
+    justify-self: center;
+    text-align: center;
+    margin: 20px;
+    color: var(--fontColor);
+}
+
+#formUserName {
+    justify-self: center;
+    margin-left: 50px;
+    text-align: justify;
+    width: 90%;
+    margin: 10px;
+    color: var(--fontColor);
+}
+
+#userName {
+    width: 95%;
+    margin: 10px;
+    padding: 5px 0px 5px 5px;
+}
+
+#formBlogTitle {
+    justify-self: center;
+    margin-left: 50px;
+    text-align: justify;
+    width: 90%;
+    margin: 10px;
+    color: var(--fontColor);
+}
+
+#blogTitle {
+    width: 95%;
+    margin: 10px;
+    padding: 5px 0px 5px 5px;
+}
+
+#formBlogContent {
+    justify-self: center;
+    margin-left: 50px;
+    text-align: justify;
+    width: 90%;
+    margin:10px;
+    color: var(--fontColor);
+}
+
+#blogContent {
+    width: 95%;
+    padding: 5px 0px 100px 5px;
+    margin: 10px;
+    vertical-align: top;
+}
+
+#submitButton {
+    justify-self: center;
+    margin-left: 50px;
+    text-align: center;
+    width: 90%;
+    margin:10px;
+    padding: 8px 0px;
+    border-radius: 5px;
+    background-color: var(--accentColor);
+    color: var(--fontColor);
+    border: none;
+    font-family: 'Times New Roman', Times, serif;
+}
