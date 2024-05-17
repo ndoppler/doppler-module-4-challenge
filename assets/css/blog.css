@@ -1,0 +1,8 @@
+#backButton {
+    font-size: 32px;
+    margin: 50px 20px 50px 0px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--accentColor);
+    color: var(--fontColor);
+}

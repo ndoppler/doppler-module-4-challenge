@@ -13,6 +13,7 @@ lightDarkSwitcher.addEventListener('click', function () {
       rootSelector.style.setProperty('--fontColor', 'black');
       rootSelector.style.setProperty('--accentColor', 'skyblue');
       lightDarkSwitcher.textContent = '☀️';
+      localStorage.setItem('mode',mode);
     }
     // If mode is light, apply dark background
     else {
@@ -21,6 +22,22 @@ lightDarkSwitcher.addEventListener('click', function () {
       rootSelector.style.setProperty('--fontColor', 'white');
       rootSelector.style.setProperty('--accentColor', 'orange');
       lightDarkSwitcher.textContent = '🌛';
-      console.log(mode);
+      localStorage.setItem('mode',mode);
     }
   });
+
+  document.addEventListener('DOMContentLoaded', function () {
+    const mode = localStorage.getItem('mode');
+    if (mode === 'light') {
+        rootSelector.style.setProperty('--backgroundColor', 'white');
+        rootSelector.style.setProperty('--fontColor', 'black');
+        rootSelector.style.setProperty('--accentColor', 'skyblue');
+        lightDarkSwitcher.textContent = '☀️';
+    } else {
+        rootSelector.style.setProperty('--backgroundColor', 'black');
+        rootSelector.style.setProperty('--fontColor', 'white');
+        rootSelector.style.setProperty('--accentColor', 'orange');
+        lightDarkSwitcher.textContent = '🌛';
+        localStorage.setItem('mode',mode);
+    }
+});
