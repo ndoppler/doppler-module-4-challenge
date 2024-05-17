@@ -4,7 +4,7 @@
     --accentColor: skyblue;
 }
 
-. {
+* {
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
 }
@@ -18,6 +18,7 @@ header {
 h1 {
     color: var(--fontColor);
     background-color: (var(--backgroundColor));
+    font-size: 175%;
 }
 
 hr {
@@ -28,7 +29,14 @@ hr {
 }
 
 body {
-    background-color: var(--backgroundColor)
+    background-color: var(--backgroundColor);
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
 }
 
 #lightDarkSwitcher {
@@ -36,4 +44,10 @@ body {
     margin: 40px 20px 50px 0px;
     background: none;
     border: none;
+}
+
+#portfolioLink {
+    font-size: 32px;
+    color: var(--fontColor);
+    background-color: var(--backgroundColor);
 }
