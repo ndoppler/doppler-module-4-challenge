@@ -1,6 +1,28 @@
+header {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.headerContainer {
+    margin: 50px 20px 50px 30px;
+    display:flex;
+    justify-content: flex-start;
+    align-content: center;
+    width: 80%;
+}
+
+.buttonContainer {
+    display:flex;
+    justify-content: space-evenly;
+    align-content: center;
+    width: 10%;
+
+}
+
 #backButton {
     font-size: 32px;
-    margin: 50px 20px 50px 0px;
+    margin: 70px 20px 70px 0px;
     border: none;
     border-radius: 5px;
     background-color: var(--accentColor);

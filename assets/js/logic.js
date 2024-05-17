@@ -3,8 +3,7 @@ var rootSelector = document.querySelector(':root');
 
 let mode = 'light';
 
-// Listen for a click event on toggle switch
-
+// Listen for a click event on light dark mode switch button
 lightDarkSwitcher.addEventListener('click', function () {
     // If mode is dark, apply light background
     if (mode === 'dark') {
@@ -26,13 +25,16 @@ lightDarkSwitcher.addEventListener('click', function () {
     }
   });
 
+// Checks the selecton of the previous webpage to maintain consistency throughout holistic website
   document.addEventListener('DOMContentLoaded', function () {
     const mode = localStorage.getItem('mode');
+    //if localstorage has mode as light, persist light mode on new page load
     if (mode === 'light') {
         rootSelector.style.setProperty('--backgroundColor', 'white');
         rootSelector.style.setProperty('--fontColor', 'black');
         rootSelector.style.setProperty('--accentColor', 'skyblue');
         lightDarkSwitcher.textContent = '☀️';
+    //if localstorage has mode as dark, persist dark mode on new page load
     } else {
         rootSelector.style.setProperty('--backgroundColor', 'black');
         rootSelector.style.setProperty('--fontColor', 'white');
