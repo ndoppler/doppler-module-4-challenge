@@ -2,7 +2,7 @@
     --fontColor: black;
     --backgroundColor: white;
     --accentColor: skyblue;
-  }
+}
 
 . {
     font-size: 20px;
@@ -15,6 +15,11 @@ header {
     background-color: var(--backgroundColor);
 }
 
+h1 {
+    color: var(--fontColor);
+    background-color: (var(--backgroundColor));
+}
+
 hr {
     border: 0;
     height: 4px;
@@ -22,13 +27,13 @@ hr {
     background-color: var(--fontColor)
 }
 
-body{
+body {
     background-color: var(--backgroundColor)
 }
 
 #lightDarkSwitcher {
     font-size: 32px;
-    margin: 50px 20px 50px 0px;
+    margin: 40px 20px 50px 0px;
     background: none;
     border: none;
 }
