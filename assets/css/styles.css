@@ -15,12 +15,6 @@ header {
     background-color: var(--backgroundColor);
 }
 
-h1 {
-    color: var(--fontColor);
-    background-color: (var(--backgroundColor));
-    font-size: 175%;
-}
-
 hr {
     border: 0;
     height: 4px;
