@@ -25,21 +25,23 @@ lightDarkSwitcher.addEventListener('click', function () {
     }
   });
 
-// Checks the selecton of the previous webpage to maintain consistency throughout holistic website
+// Checks the selecton of the previous webpage to maintain consistency throughout whole website
   document.addEventListener('DOMContentLoaded', function () {
     const mode = localStorage.getItem('mode');
     //if localstorage has mode as light, persist light mode on new page load
-    if (mode === 'light') {
-        rootSelector.style.setProperty('--backgroundColor', 'white');
-        rootSelector.style.setProperty('--fontColor', 'black');
-        rootSelector.style.setProperty('--accentColor', 'skyblue');
-        lightDarkSwitcher.textContent = '☀️';
-    //if localstorage has mode as dark, persist dark mode on new page load
-    } else {
+    if (mode === 'dark') {
         rootSelector.style.setProperty('--backgroundColor', 'black');
         rootSelector.style.setProperty('--fontColor', 'white');
         rootSelector.style.setProperty('--accentColor', 'orange');
         lightDarkSwitcher.textContent = '🌛';
         localStorage.setItem('mode',mode);
+    }
+    //if localstorage has mode as dark, persist dark mode on new page load
+  
+    else {
+        rootSelector.style.setProperty('--backgroundColor', 'white');
+        rootSelector.style.setProperty('--fontColor', 'black');
+        rootSelector.style.setProperty('--accentColor', 'skyblue');
+        lightDarkSwitcher.textContent = '☀️';
     }
 });

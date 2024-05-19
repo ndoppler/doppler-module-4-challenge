@@ -22,15 +22,21 @@ hr {
     background-color: var(--fontColor)
 }
 
+main {
+    flex-grow: 1;
+}
+
 body {
     background-color: var(--backgroundColor);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
 footer {
-    display: flex;
-    justify-content: center;
+    text-align: center;
 }
 
 #lightDarkSwitcher {

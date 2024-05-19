@@ -12,9 +12,9 @@ function saveEnteredBlogPost() {
     };
 
     let storedBlogPosts = JSON.parse(localStorage.getItem('storedBlogPosts'));
-    console.log(storedBlogPosts)
 
     if (storedBlogPosts === null) {
+        storedBlogPosts = [];
         storedBlogPosts.push(enteredBlogPost);
         localStorage.setItem('storedBlogPosts', JSON.stringify(storedBlogPosts));
     }

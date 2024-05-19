@@ -13,6 +13,28 @@ h1 {
     font-size: 175%;
 }
 
+h2 {
+    font-size: 150%;
+}
+
+h3 {
+    font-size: 150%;
+}
+
+p {
+    font-size:  125%;
+}
+
+ul {
+    width: 93%;
+}
+
+li {
+    list-style: none;
+    color: var(--fontColor);
+}
+
+
 .headerContainer {
     margin: 20px 20px 20px 30px;
     display:flex;
@@ -26,7 +48,23 @@ h1 {
     justify-content: space-evenly;
     align-content: center;
     width: 10%;
+}
 
+.blogPosts {
+    display: flex;
+    align-self: center;
+    width: auto;
+}
+
+.blogList {
+    display:flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 100%;
+}
+
+.headerBreak {
+    width: 98.7%;
 }
 
 #backButton {
