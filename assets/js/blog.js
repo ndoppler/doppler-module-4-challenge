@@ -15,9 +15,9 @@ function renderBlogEntries() {
         const h3 = document.createElement('h3');
         const p = document.createElement('p');
         const hr = document.createElement('hr');
-        h2.textContent = blogEntry.blogTitle;
+        h2.textContent = `Title: ${blogEntry.blogTitle}`;
         h3.textContent = `Author: ${blogEntry.userName}`;
-        p.textContent = blogEntry.blogContent;
+        p.textContent = `Content: ${blogEntry.blogContent}`;
         
 
         li.setAttribute('data-index', i);

@@ -10,19 +10,19 @@ header {
 h1 {
     color: var(--fontColor);
     background-color: (var(--backgroundColor));
-    font-size: 175%;
+    font-size: 250%;
 }
 
 h2 {
-    font-size: 150%;
+    font-size: 200%;
 }
 
 h3 {
-    font-size: 150%;
+    font-size: 125%;
 }
 
 p {
-    font-size:  125%;
+    font-size:  100%;
 }
 
 ul {
@@ -64,7 +64,8 @@ li {
 }
 
 .headerBreak {
-    width: 98.7%;
+    width: 80%;
+    padding-left: 50%;
 }
 
 #backButton {

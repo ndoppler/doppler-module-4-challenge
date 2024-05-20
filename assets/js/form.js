@@ -26,7 +26,7 @@ function saveEnteredBlogPost() {
 
 submitButton.addEventListener('click', function () {
     if (userName.value === "" || blogTitle.value === "" || blogContent.value === "") {
-        alert('wrong submission')
+        alert('Please fill out all required fields and submit again.')
     }
     else {
         saveEnteredBlogPost();
